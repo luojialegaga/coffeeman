@@ -3,8 +3,9 @@ workflows:
     name: Android Build
     max_build_duration: 60
     environment:
-      node: v20
-      java: java17
+      node: 20
+      java:
+        version: 17
       vars:
         ANDROID_NDK_VERSION: "25.2.5000000"
     scripts:
